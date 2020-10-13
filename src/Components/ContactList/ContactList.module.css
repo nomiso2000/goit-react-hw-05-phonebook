@@ -1,0 +1,45 @@
+.button {
+  background-color: #4caf50; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+.list {
+  margin: 0px;
+  padding: 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+  padding-left: 10px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.48);
+}
+
+.enter {
+  transform: translateX(-100%);
+}
+.enterActive {
+  transform: translateX(0);
+  transition: all 250ms linear;
+}
+.exit {
+  transform: translateX(0);
+}
+.exitActive {
+  transform: translateX(-100%);
+  transition: all 250ms linear;
+}
